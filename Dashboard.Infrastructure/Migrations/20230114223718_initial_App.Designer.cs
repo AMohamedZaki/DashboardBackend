@@ -3,6 +3,7 @@ using System;
 using Dashboard.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Dashboard.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230114223718_initial_App")]
+    partial class initial_App
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,7 +38,6 @@ namespace Dashboard.Infrastructure.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<int?>("CityId")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("CreatedBy")
@@ -441,11 +442,9 @@ namespace Dashboard.Infrastructure.Migrations
 
             modelBuilder.Entity("Dashboard.Core.Entities.Account", b =>
                 {
-                    b.HasOne("Dashboard.Core.Entities.City", "City")
+                    b.HasOne("Dashboard.Core.Entities.City", null)
                         .WithMany("Account")
-                        .HasForeignKey("CityId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CityId");
 
                     b.HasOne("Dashboard.Core.Entities.District", "District")
                         .WithMany("Account")
@@ -456,8 +455,6 @@ namespace Dashboard.Infrastructure.Migrations
                     b.HasOne("Dashboard.Core.Entities.Governorate", null)
                         .WithMany("Account")
                         .HasForeignKey("GovernorateId");
-
-                    b.Navigation("City");
 
                     b.Navigation("District");
                 });
