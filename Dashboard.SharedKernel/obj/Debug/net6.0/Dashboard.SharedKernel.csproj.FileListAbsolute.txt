@@ -1,0 +1,11 @@
+D:\Work\Call Centar\BackEnd\Dashboard.SharedKernel\bin\Debug\net6.0\Dashboard.SharedKernel.deps.json
+D:\Work\Call Centar\BackEnd\Dashboard.SharedKernel\bin\Debug\net6.0\Dashboard.SharedKernel.dll
+D:\Work\Call Centar\BackEnd\Dashboard.SharedKernel\bin\Debug\net6.0\ref\Dashboard.SharedKernel.dll
+D:\Work\Call Centar\BackEnd\Dashboard.SharedKernel\bin\Debug\net6.0\Dashboard.SharedKernel.pdb
+D:\Work\Call Centar\BackEnd\Dashboard.SharedKernel\obj\Debug\net6.0\Dashboard.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Call Centar\BackEnd\Dashboard.SharedKernel\obj\Debug\net6.0\Dashboard.SharedKernel.AssemblyInfoInputs.cache
+D:\Work\Call Centar\BackEnd\Dashboard.SharedKernel\obj\Debug\net6.0\Dashboard.SharedKernel.AssemblyInfo.cs
+D:\Work\Call Centar\BackEnd\Dashboard.SharedKernel\obj\Debug\net6.0\Dashboard.SharedKernel.csproj.CoreCompileInputs.cache
+D:\Work\Call Centar\BackEnd\Dashboard.SharedKernel\obj\Debug\net6.0\Dashboard.SharedKernel.dll
+D:\Work\Call Centar\BackEnd\Dashboard.SharedKernel\obj\Debug\net6.0\ref\Dashboard.SharedKernel.dll
+D:\Work\Call Centar\BackEnd\Dashboard.SharedKernel\obj\Debug\net6.0\Dashboard.SharedKernel.pdb

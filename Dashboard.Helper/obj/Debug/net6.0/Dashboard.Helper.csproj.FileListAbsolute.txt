@@ -1,0 +1,11 @@
+D:\Work\Call Centar\BackEnd\Dashboard.Helper\bin\Debug\net6.0\Dashboard.Helper.deps.json
+D:\Work\Call Centar\BackEnd\Dashboard.Helper\bin\Debug\net6.0\Dashboard.Helper.dll
+D:\Work\Call Centar\BackEnd\Dashboard.Helper\bin\Debug\net6.0\ref\Dashboard.Helper.dll
+D:\Work\Call Centar\BackEnd\Dashboard.Helper\bin\Debug\net6.0\Dashboard.Helper.pdb
+D:\Work\Call Centar\BackEnd\Dashboard.Helper\obj\Debug\net6.0\Dashboard.Helper.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Call Centar\BackEnd\Dashboard.Helper\obj\Debug\net6.0\Dashboard.Helper.AssemblyInfoInputs.cache
+D:\Work\Call Centar\BackEnd\Dashboard.Helper\obj\Debug\net6.0\Dashboard.Helper.AssemblyInfo.cs
+D:\Work\Call Centar\BackEnd\Dashboard.Helper\obj\Debug\net6.0\Dashboard.Helper.csproj.CoreCompileInputs.cache
+D:\Work\Call Centar\BackEnd\Dashboard.Helper\obj\Debug\net6.0\Dashboard.Helper.dll
+D:\Work\Call Centar\BackEnd\Dashboard.Helper\obj\Debug\net6.0\ref\Dashboard.Helper.dll
+D:\Work\Call Centar\BackEnd\Dashboard.Helper\obj\Debug\net6.0\Dashboard.Helper.pdb

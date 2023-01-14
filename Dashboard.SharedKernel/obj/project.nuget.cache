@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "cL59HUabauy8GX0HxKsVYqnxBBx0YknIJFkzOM+69zgzr3+V835EfmjonzpZuKtSMQw3ejFpcXY8W74PQcDi/g==",
+  "success": true,
+  "projectFilePath": "D:\\Work\\Call Centar\\DashboardBackend\\Dashboard.SharedKernel\\Dashboard.SharedKernel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Man2eem\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Man2eem\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

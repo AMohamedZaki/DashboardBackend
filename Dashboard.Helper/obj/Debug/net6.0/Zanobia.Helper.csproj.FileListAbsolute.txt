@@ -1,0 +1,12 @@
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\bin\Debug\net6.0\Zanobia.Helper.deps.json
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\bin\Debug\net6.0\Zanobia.Helper.dll
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\bin\Debug\net6.0\ref\Zanobia.Helper.dll
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\bin\Debug\net6.0\Zanobia.Helper.pdb
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\obj\Debug\net6.0\Zanobia.Helper.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\obj\Debug\net6.0\Zanobia.Helper.AssemblyInfoInputs.cache
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\obj\Debug\net6.0\Zanobia.Helper.AssemblyInfo.cs
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\obj\Debug\net6.0\Zanobia.Helper.csproj.CoreCompileInputs.cache
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\obj\Debug\net6.0\Zanobia.Helper.dll
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\obj\Debug\net6.0\ref\Zanobia.Helper.dll
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\obj\Debug\net6.0\Zanobia.Helper.pdb
+D:\Work\Wassla\Zanobia\Zanobia\BackEnd\Zanobia.Helper\obj\Debug\net6.0\Zanobia.Helper.csproj.AssemblyReference.cache

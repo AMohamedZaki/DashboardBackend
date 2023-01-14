@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "+94rBeVM7VgZaXWiAaRs3A40QBImruqaTamUwV7HJqE7HS9+iqq8+oL2JmKwQYj8z4aOBiVDAeAsrET3jl7t0w==",
+  "success": true,
+  "projectFilePath": "D:\\Work\\Call Centar\\DashboardBackend\\Dashboard.Helper\\Dashboard.Helper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Man2eem\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\Man2eem\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\Man2eem\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
