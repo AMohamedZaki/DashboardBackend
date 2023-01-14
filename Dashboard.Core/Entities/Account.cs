@@ -18,6 +18,9 @@ namespace Dashboard.Core.Entities
         public int? DistrictId { get; set; }
         public virtual District District { get; set; }
 
+        [ForeignKey("City")]
+        public int? CityId { get; set; }
+        public virtual City City { get; set; }
         public string? MainStreet { get; set; }
         public string? Address { get; set; }
         public string? BuildNo { get; set; }

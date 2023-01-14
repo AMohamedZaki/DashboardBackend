@@ -59,6 +59,7 @@ namespace Dashboard.Infrastructure.Repository
         {
             var accounts = GetDbSet()
                 .Include(account => account.Contact)
+                .Include(account => account.City)
                 .Include(account => account.District)
                 .AsQueryable();
             if (AccountTelDto != null && !string.IsNullOrEmpty(AccountTelDto.tel))
@@ -74,6 +75,9 @@ namespace Dashboard.Infrastructure.Repository
             }
             var _accounts = accounts.ToList().Select(_account =>
              {
+                 _account.City= null;
+                 _account.City.Account = null;
+
                  _account.District.Account = null;
                  _account.District.City= null;
                  return _account;
