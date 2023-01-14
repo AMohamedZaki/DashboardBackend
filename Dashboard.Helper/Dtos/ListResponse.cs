@@ -1,0 +1,18 @@
+﻿
+using System.Collections.Generic;
+
+namespace Dashboard.Web.Endpoints.Dtos;
+
+public class ListResponse<T>
+{
+  public List<T> Data { get; private set; } = new();
+  public int TotalCount { get; private set; } = 0;
+  public int PageNumber { get; private set; } = 0;
+
+  public ListResponse(List<T> data, int totalCount=0, int pageNumber=0)
+  {
+    Data = data;
+    TotalCount = totalCount;
+    PageNumber = pageNumber;
+  }
+}
