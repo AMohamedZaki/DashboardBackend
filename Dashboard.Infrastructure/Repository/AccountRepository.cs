@@ -37,6 +37,17 @@ namespace Dashboard.Infrastructure.Repository
                 accounts = accounts.Where(acc => acc.Tel3.ToLower().Contains(AccountFilterDto.Tel3.ToLower()));
             }
 
+            //var _accounts = accounts.ToList().Select(_account =>
+            //{
+            //    _account.City = null;
+            //    _account.City.Account = null;
+
+            //    _account.District.Account = null;
+            //    _account.District.City = null;
+            //    return _account;
+
+            //});
+
             return new PagedList<Account>(accounts, AccountFilterDto.PageIndex, AccountFilterDto.PageSize);
         }
 
@@ -86,5 +97,6 @@ namespace Dashboard.Infrastructure.Repository
 
             return new PagedList<Account>(_accounts, AccountTelDto.PageIndex, AccountTelDto.PageSize);
         }
+
     }
 }

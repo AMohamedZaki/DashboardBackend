@@ -11,5 +11,6 @@ namespace Dashboard.Infrastructure.Serives.interfaces
         Task<Account> Add(AccountDto accountDto);
         Task<List<Account>> GetAccountByPhone(AccountTelDto AccountFilterDto);
         Task<Account> Update(AccountDto accountDto);
+        Task<List<Account>> GetAccountsAysnc(AccountFilterDto AccountFilterDto);
     }
 }

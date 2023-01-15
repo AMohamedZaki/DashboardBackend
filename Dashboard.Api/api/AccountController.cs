@@ -15,11 +15,11 @@ namespace Dashboard.Api.api
             _accountService = accountService;
         }
 
-        //[HttpGet("GetAll")]
-        //public async Task<IActionResult> GetAll(AccountFilterDto accountFilterDto)
-        //{
-        //    return await ExecutePagination(_accountRepository.GetAccountsAysnc, accountFilterDto);
-        //}
+        [HttpPost("GetAll")]
+        public async Task<IActionResult> GetAll(AccountFilterDto accountFilterDto)
+        {
+            return await Execute(_accountService.GetAccountsAysnc, accountFilterDto);
+        }
 
         [HttpPost("AddAccount")]
         public async Task<IActionResult> AddAccount([FromBody] AccountDto AccountDto)

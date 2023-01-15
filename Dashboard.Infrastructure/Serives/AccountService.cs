@@ -12,7 +12,7 @@ namespace Dashboard.Infrastructure.Serives
     public class AccountService : IAccountService
     {
         private IMapper _mapper;
-        private IAccountRepository _accountRepository;
+        private readonly IAccountRepository _accountRepository;
         public AccountService(IMapper mapper, IAccountRepository accountRepository)
         {
             _mapper = mapper;
@@ -33,10 +33,15 @@ namespace Dashboard.Infrastructure.Serives
 
         public async Task<Account> Update(AccountDto accountDto)
         {
-           // var account = _accountRepository.GetById(accountDto.Id);
+            // var account = _accountRepository.GetById(accountDto.Id);
 
 
             return null;
+        }
+
+        public async Task<List<Account>> GetAccountsAysnc(AccountFilterDto AccountFilterDto)
+        {
+            return await _accountRepository.GetAccountsAysnc(AccountFilterDto);
         }
     }
 }
