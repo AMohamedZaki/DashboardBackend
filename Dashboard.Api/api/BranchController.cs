@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Zanobia.Api.api
+namespace Dashboard.Api.api
 {
     [Route("api/[controller]")]
     [ApiController]

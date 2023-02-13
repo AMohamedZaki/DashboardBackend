@@ -3,10 +3,10 @@ using Microsoft.IdentityModel.Tokens;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Zanobia.Core.Entities;
-using Zanobia.Helper.Dtos.Account;
+using Dashboard.Core.Entities;
+using Dashboard.Helper.Dtos.Account;
 
-namespace Zanobia.Infrastructure.Serives.interfaces
+namespace Dashboard.Infrastructure.Serives.interfaces
 {
     public interface IUserAccountService
     {

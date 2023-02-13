@@ -1,4 +1,4 @@
-﻿namespace Zanobia.SharedKernel.Extensions
+﻿namespace Dashboard.SharedKernel.Extensions
 {
     public class ClaimTypesExtensions
     {

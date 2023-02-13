@@ -1,4 +1,4 @@
-﻿namespace Zanobia.Helper.Dtos.Account
+﻿namespace Dashboard.Helper.Dtos.Account
 {
     public class RegisterDTO
     {

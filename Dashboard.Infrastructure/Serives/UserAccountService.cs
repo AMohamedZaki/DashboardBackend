@@ -10,12 +10,12 @@ using System.Security.Claims;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
-using Zanobia.Core.Entities;
-using Zanobia.Core.Enums;
-using Zanobia.Helper.Dtos.Account;
-using Zanobia.Infrastructure.Serives.interfaces;
+using Dashboard.Core.Entities;
+using Dashboard.Core.Enums;
+using Dashboard.Helper.Dtos.Account;
+using Dashboard.Infrastructure.Serives.interfaces;
 
-namespace Zanobia.Infrastructure.Serives
+namespace Dashboard.Infrastructure.Serives
 {
     public class UserAccountService : IUserAccountService
     {

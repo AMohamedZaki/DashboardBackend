@@ -1,7 +1,7 @@
 ﻿
 using System.Reflection;
-using Zanobia.Infrastructure;
-using Zanobia.Infrastructure.Data;
+using Dashboard.Infrastructure;
+using Dashboard.Infrastructure.Data;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
@@ -11,11 +11,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Zanobia.Infrastructure.Repository.Interfaces;
-using Zanobia.Infrastructure.Repository;
-using Zanobia.Infrastructure.Serives;
-using Zanobia.Infrastructure.Serives.interfaces;
-using Zanobia.Core.Entities;
+using Dashboard.Infrastructure.Repository.Interfaces;
+using Dashboard.Infrastructure.Repository;
+using Dashboard.Infrastructure.Serives;
+using Dashboard.Infrastructure.Serives.interfaces;
+using Dashboard.Core.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -68,7 +68,7 @@ builder.Services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAn
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Zanobia", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Dashboard", Version = "v1" });
     c.EnableAnnotations();
 });
 

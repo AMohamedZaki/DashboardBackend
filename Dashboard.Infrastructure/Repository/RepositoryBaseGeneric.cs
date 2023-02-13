@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using Zanobia.Infrastructure.Data;
-using Zanobia.Infrastructure.Repository.Interfaces;
+using Dashboard.Infrastructure.Data;
+using Dashboard.Infrastructure.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
-namespace Zanobia.Infrastructure.Repository
+namespace Dashboard.Infrastructure.Repository
 {
     public class RepositoryBaseGeneric<T>: IRepository<T> where T : class
     {

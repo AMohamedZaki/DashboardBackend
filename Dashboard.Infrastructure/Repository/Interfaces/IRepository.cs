@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Zanobia.Infrastructure.Repository.Interfaces
+namespace Dashboard.Infrastructure.Repository.Interfaces
 {
     public interface IRepository<T> where T : class
     {

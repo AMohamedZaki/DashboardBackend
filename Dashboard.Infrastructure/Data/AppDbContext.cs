@@ -1,9 +1,9 @@
-﻿using Zanobia.Core.Entities;
+﻿using Dashboard.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 
-namespace Zanobia.Infrastructure.Data
+namespace Dashboard.Infrastructure.Data
 {
     public class AppDbContext : IdentityDbContext<ApplicationUser>
     {

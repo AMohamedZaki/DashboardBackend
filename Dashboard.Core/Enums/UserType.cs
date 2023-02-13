@@ -1,4 +1,4 @@
-﻿namespace Zanobia.Core.Enums
+﻿namespace Dashboard.Core.Enums
 {
     public enum UserTypeEnum
     {

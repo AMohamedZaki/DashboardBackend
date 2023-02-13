@@ -1,7 +1,7 @@
 ﻿using System;
-using Zanobia.Core.Entities;
+using Dashboard.Core.Entities;
 
-namespace Zanobia.Infrastructure.Serives.interfaces
+namespace Dashboard.Infrastructure.Serives.interfaces
 {
     public interface IJwtHandler
     {

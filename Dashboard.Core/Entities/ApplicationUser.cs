@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Zanobia.Core.Enums;
+using Dashboard.Core.Enums;
 
-namespace Zanobia.Core.Entities
+namespace Dashboard.Core.Entities
 {
     public class ApplicationUser: IdentityUser
     {

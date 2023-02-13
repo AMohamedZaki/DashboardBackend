@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zanobia.Core.Specifications;
+namespace Dashboard.Core.Specifications;
 
     public static class PaginationHelper
     {

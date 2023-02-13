@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Zanobia.Infrastructure.Data.Converters
+namespace Dashboard.Infrastructure.Data.Converters
 {
     public class ActiveTypeConverter : ValueConverter<bool, string>
     {

@@ -1,4 +1,4 @@
-﻿namespace Zanobia.Api.Constants
+﻿namespace Dashboard.Api.Constants
 {
     public class AuthConstants
     {

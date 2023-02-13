@@ -1,4 +1,4 @@
-﻿namespace Zanobia.Helper
+﻿namespace Dashboard.Helper
 {
     public class PaginationFilter
     {

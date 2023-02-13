@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
-using Zanobia.Helper.Dtos.Account;
-using Zanobia.Infrastructure.Serives.interfaces;
+using Dashboard.Helper.Dtos.Account;
+using Dashboard.Infrastructure.Serives.interfaces;
 
-namespace Zanobia.Api.api
+namespace Dashboard.Api.api
 {
     [Route("api/[controller]")]
     public class AccountController : BaseApiController

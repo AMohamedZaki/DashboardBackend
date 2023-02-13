@@ -5,11 +5,11 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Zanobia.Core.Entities;
-using Zanobia.Core.Enums;
-using Zanobia.Infrastructure.Serives.interfaces;
+using Dashboard.Core.Entities;
+using Dashboard.Core.Enums;
+using Dashboard.Infrastructure.Serives.interfaces;
 
-namespace Zanobia.Infrastructure.Serives
+namespace Dashboard.Infrastructure.Serives
 {
     public class JwtHandler : IJwtHandler
     {
