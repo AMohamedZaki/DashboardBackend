@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace Dashboard.Helper
+namespace Zanobia.Helper
 {
     public class BaseResponse<T> where T : class
     {

@@ -1,7 +1,7 @@
 ﻿
 using System.Collections.Generic;
 
-namespace Dashboard.Web.Endpoints.Dtos;
+namespace Zanobia.Web.Endpoints.Dtos;
 
 public class ListResponse<T>
 {

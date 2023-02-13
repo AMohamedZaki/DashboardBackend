@@ -1,4 +1,4 @@
-﻿namespace Dashboard.Helper
+﻿namespace Zanobia.Helper
 {
     public class PagedList<T> : List<T>, IPagedList<T>
     {

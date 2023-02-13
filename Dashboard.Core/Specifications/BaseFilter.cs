@@ -1,4 +1,4 @@
-﻿namespace Dashboard.Core.Specifications;
+﻿namespace Zanobia.Core.Specifications;
 public class BaseFilter
 {
     public bool LoadChildren { get; set; } = true;

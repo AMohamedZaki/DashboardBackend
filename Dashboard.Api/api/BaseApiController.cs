@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
-using Dashboard.Helper;
+using Zanobia.Helper;
 
-namespace Dashboard.Api.api
+namespace Zanobia.Api.api
 {
     public class BaseApiController : Controller
     {

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace Dashboard.Api.Pages;
+namespace Zanobia.Api.Pages;
 
 public class PrivacyModel : PageModel
 {

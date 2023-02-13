@@ -3,13 +3,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
-namespace Dashboard.Infrastructure.Repository.Interfaces
+namespace Zanobia.Infrastructure.Repository.Interfaces
 {
     public interface IRepository<T> where T : class
     {
         // Marks an entity as new
         void Add(T entity);
+        Task AddRangeAsync(List<T> entities);
         // Marks an entity as modified
         void Update(T entity);
         // Marks an entity to be removed
