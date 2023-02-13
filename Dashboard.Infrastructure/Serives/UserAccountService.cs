@@ -120,7 +120,7 @@ namespace Dashboard.Infrastructure.Serives
         }
         public async Task<(ApplicationUser user, bool loginSuccessful)> LoginUser(LoginDTO loginDto, IHeaderDictionary headers)
         {
-            var user = await _userManager.FindByNameAsync(loginDto.UserName);
+            var user = await _userManager.FindByEmailAsync(loginDto.Email);
             bool notValidPassword = !await _userManager.CheckPasswordAsync(user, loginDto.Password);
             if (user == null || user.IsDeleted || notValidPassword)
                 return (null, false);
