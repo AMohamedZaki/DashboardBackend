@@ -2,10 +2,10 @@
 
 namespace Dashboard.Core.Entities
 {
-    public abstract class Loction
+    public abstract class Loction<T>
     {
         [Key]
-        public int Id { get; set; }
+        public T Id { get; set; }
         public string Name_ar { get; set; }
         public string Name_en { get; set; }
     }

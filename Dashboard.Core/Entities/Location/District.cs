@@ -2,7 +2,7 @@
 
 namespace Dashboard.Core.Entities
 {
-    public class District : Loction
+    public class District : Loction<long>
     {
         [ForeignKey("City")]
         public int? CityId { get; set; }

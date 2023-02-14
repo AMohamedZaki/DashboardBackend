@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Dashboard.Core.Entities
 {
-    public class Region : Loction
+    public class Region : Loction<int>
     {
         public string Code { get; set; }
         public int CapitalCityId { get; set; }

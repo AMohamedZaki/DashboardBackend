@@ -2,7 +2,7 @@
 
 namespace Dashboard.Core.Entities
 {
-    public class City: Loction
+    public class City: Loction<int>
     {
         public decimal? Lat { get; set; }
         public decimal? Long { get; set; }
