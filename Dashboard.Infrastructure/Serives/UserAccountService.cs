@@ -39,7 +39,8 @@ namespace Dashboard.Infrastructure.Serives
             {
                 Email = registerDto.Email,
                 UserName = registerDto.UserName,
-                UserType = (UserTypeEnum)registerDto.UserType
+                UserType = (UserTypeEnum)registerDto.UserType,
+                PhoneNumber = registerDto.PhoneNumber
             };
             var result = await _userManager.CreateAsync(user, registerDto.Password);
             if (!result.Succeeded)

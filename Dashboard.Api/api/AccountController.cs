@@ -37,7 +37,7 @@ namespace Dashboard.Api.api
 
         [AllowAnonymous, HttpPost("Login")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Login(LoginDTO loginDto)
+        public async Task<IActionResult> Login([FromBody] LoginDTO loginDto)
         {
             try
             {
@@ -66,7 +66,7 @@ namespace Dashboard.Api.api
 
 
         [AllowAnonymous, HttpPost("ResetPassword")]
-        public async Task<bool> ResetPassword(ResetPasswordDTO resetPasswordDTO)
+        public async Task<bool> ResetPassword([FromBody] ResetPasswordDTO resetPasswordDTO)
         {
             return await _IUserAccountService.ResetPassword(resetPasswordDTO);
         }
@@ -88,7 +88,7 @@ namespace Dashboard.Api.api
         }
 
         [AllowAnonymous, HttpPost, Route("Register")]
-        public async Task<IActionResult> Register(RegisterDTO registerDTO)
+        public async Task<IActionResult> Register([FromBody] RegisterDTO registerDTO)
         {
             try
             {
