@@ -5,5 +5,6 @@
         public decimal? Lat { get; set; }
         public decimal? Long { get; set; }
         public string RegionName { get; set; }
+        public int? RegionId { get; set; }
     }
 }

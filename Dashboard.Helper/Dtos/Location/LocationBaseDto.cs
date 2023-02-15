@@ -1,6 +1,6 @@
 ﻿namespace Dashboard.Helper.Dtos.Location
 {
-    public class LocationBaseDto<T>
+    public class LocationBaseDto<T>: PaginationFilter
     {
             public T Id { get; set; }
             public string Name_ar { get; set; }
