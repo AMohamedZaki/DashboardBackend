@@ -4,7 +4,7 @@ using System;
 using System.Threading.Tasks;
 using Dashboard.Helper;
 
-namespace Dashboard.Api.api
+namespace Dashboard.Api
 {
     public class BaseApiController : Controller
     {

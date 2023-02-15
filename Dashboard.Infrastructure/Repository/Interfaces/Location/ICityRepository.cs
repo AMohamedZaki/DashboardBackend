@@ -7,6 +7,6 @@ namespace Dashboard.Infrastructure.Repository.Interfaces
 {
     public interface ICityRepository: IRepository<City>
     {
-        Task<List<City>> GetCitiesAysnc(CityDto cityFilterDto);
+        Task<List<CityDto>> GetCitiesAysnc(CityDto cityFilterDto);
     }
 }

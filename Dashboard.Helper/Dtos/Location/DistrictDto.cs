@@ -1,7 +1,9 @@
 ﻿namespace Dashboard.Helper.Dtos.Location
 {
-    public class DistrictDto: LocationBaseDto<int>
+    public class DistrictDto: LocationBaseDto<long>
     {
-        public string CityName { get; set; }
+        public string CityNameEn { get; set; }
+        public string CityNameAr { get; set; }
+        public int CityId { get; set; }
     }
 }

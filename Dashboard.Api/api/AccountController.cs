@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Dashboard.Helper.Dtos.Account;
 using Dashboard.Infrastructure.Serives.interfaces;
 
-namespace Dashboard.Api.api
+namespace Dashboard.Api
 {
     [Route("api/[controller]")]
     public class AccountController : BaseApiController

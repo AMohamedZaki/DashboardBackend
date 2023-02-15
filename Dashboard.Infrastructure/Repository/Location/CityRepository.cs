@@ -16,7 +16,7 @@ namespace Dashboard.Infrastructure.Repository
 
         }
 
-        public async Task<List<City>> GetCitiesAysnc(CityDto cityFilterDto)
+        public async Task<List<CityDto>> GetCitiesAysnc(CityDto cityFilterDto)
         {
             var cities = GetQuerable();
             if (cityFilterDto != null && !string.IsNullOrEmpty(cityFilterDto.Name_en))
@@ -34,7 +34,17 @@ namespace Dashboard.Infrastructure.Repository
                 cities = cities.Where(city => city.RegionId == cityFilterDto.RegionId);
             }
 
-            return new PagedList<City>(cities, cityFilterDto.PageIndex, cityFilterDto.PageSize);
+            var citiesDto = cities.Select(city => new CityDto
+            {
+                Id = city.Id,
+                Lat = city.Lat,
+                Long = city.Long,
+                Name_en = city.Name_en,
+                Name_ar = city.Name_ar,
+                RegionNameEn = city.Region.Name_en,
+                RegionNameAr = city.Region.Name_ar
+            });
+            return new PagedList<CityDto>(citiesDto, cityFilterDto.PageIndex, cityFilterDto.PageSize);
         }
     }
 }
