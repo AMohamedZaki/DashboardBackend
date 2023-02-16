@@ -54,6 +54,11 @@ builder.Services.AddAutoMapper(typeof(Program).Assembly);
 builder.Services.AddHealthChecks();
 builder.Services.AddTransient(typeof(IRepository<>), typeof(RepositoryBaseGeneric<>));
 builder.Services.AddTransient(typeof(IUserAccountService), typeof(UserAccountService));
+
+builder.Services.AddTransient(typeof(IRegionRepository), typeof(RegionRepository));
+builder.Services.AddTransient(typeof(ICityRepository), typeof(CityRepository));
+builder.Services.AddTransient(typeof(IDistrictRepository), typeof(DistrictRepository));
+
 builder.Services.AddSingleton<IJwtHandler, JwtHandler>();
 
 
@@ -129,9 +134,9 @@ app.UseSwagger();
 
 app.UseSwaggerUI(c => {
 
-    //c.SwaggerEndpoint("/Menu/swagger/v1/swagger.json", "Dashboard V1");
-    //c.RoutePrefix = "";
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Dashboard V1");
+    c.SwaggerEndpoint("/Menu/swagger/v1/swagger.json", "Dashboard V1");
+    c.RoutePrefix = "";
+    //c.SwaggerEndpoint("/swagger/v1/swagger.json", "Dashboard V1");
 });
 
 
