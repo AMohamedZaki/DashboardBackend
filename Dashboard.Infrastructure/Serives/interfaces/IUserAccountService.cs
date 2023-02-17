@@ -20,6 +20,6 @@ namespace Dashboard.Infrastructure.Serives.interfaces
         Task<(ApplicationUser user, bool loginSuccessful)> LoginUser(LoginDTO loginDto, IHeaderDictionary headers);
         Task<bool> ResetPassword(ResetPasswordDTO resetPasswordDTO);
         Task<object> GetUserByToken(string token);
-        List<RegisterDTO> GetAllUsers();
+        List<RegisterDTO> GetAllUsers(int? UserType = null);
     }
 }

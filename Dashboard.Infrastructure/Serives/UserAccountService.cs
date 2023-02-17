@@ -11,9 +11,9 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using Dashboard.Core.Entities;
-using Dashboard.Core.Enums;
 using Dashboard.Helper.Dtos.Account;
 using Dashboard.Infrastructure.Serives.interfaces;
+using Dashboard.Helper;
 
 namespace Dashboard.Infrastructure.Serives
 {
@@ -129,7 +129,7 @@ namespace Dashboard.Infrastructure.Serives
                 if (user == null || user.IsDeleted || notValidPassword)
                 {
                     return (null, loginSuccessful);
-                } 
+                }
             }
             loginSuccessful = user != null;
             return (user, loginSuccessful);
@@ -150,14 +150,28 @@ namespace Dashboard.Infrastructure.Serives
             return null;
         }
 
-        public List<RegisterDTO> GetAllUsers()
+        public List<RegisterDTO> GetAllUsers(int? UserType = null)
         {
-            var users =  _userManager.Users.Select(user => new RegisterDTO
+            IQueryable<RegisterDTO>? users = null;
+            if (UserType == null)
             {
-                Email = user.Email,
-                UserName = user.UserName,
-                UserType = (int)user.UserType
-            });
+                users = _userManager.Users.Select(user => new RegisterDTO
+                {
+                    Email = user.Email,
+                    UserName = user.UserName,
+                    UserType = (int)user.UserType
+                });
+            }
+            else
+            {
+
+                users = _userManager.Users.Select(user => new RegisterDTO
+                {
+                    Email = user.Email,
+                    UserName = user.UserName,
+                    UserType = (int)user.UserType
+                });
+            }
 
             return users.ToList();
         }

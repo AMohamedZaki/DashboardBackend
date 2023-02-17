@@ -103,11 +103,11 @@ namespace Dashboard.Api
 
 
         [AllowAnonymous, HttpGet, Route("GetAllUsers")]
-        public IActionResult GetAllUsers()
+        public IActionResult GetAllUsers([FromQuery] int? UserType)
         {
             try
             {
-                return Ok(_IUserAccountService.GetAllUsers());
+                return Ok(_IUserAccountService.GetAllUsers(UserType));
             }
             catch (Exception ex)
             {
