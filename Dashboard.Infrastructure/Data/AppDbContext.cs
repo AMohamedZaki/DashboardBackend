@@ -10,7 +10,7 @@ namespace Dashboard.Infrastructure.Data
         public DbSet<Region> Region { get; set; }
         public DbSet<City> City { get; set; }
         public DbSet<District> District { get; set; }
-
+        public DbSet<Restaurant> Restaurant { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
