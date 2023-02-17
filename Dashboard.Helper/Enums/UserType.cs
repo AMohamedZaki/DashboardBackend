@@ -3,6 +3,7 @@
     public enum UserTypeEnum
     {
         Admin = 1,
-        Employee
+        Employee,
+        Restaurant
     }
 }
