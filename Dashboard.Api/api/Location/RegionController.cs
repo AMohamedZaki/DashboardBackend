@@ -17,7 +17,7 @@ namespace Dashboard.Api
             _regionRepository = regionRepository;
         }
 
-        [HttpPost("GetAllRegion")]
+        [HttpPost("GetAll")]
         public async Task<IActionResult> GetAll([FromBody]RegionDto regionDto)
         {
             return await Execute(_regionRepository.GetRegionsAysnc, regionDto);
