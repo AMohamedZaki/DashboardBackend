@@ -42,7 +42,7 @@ namespace Dashboard.Api
             try
             {
                 var loginResult = await _IUserAccountService.LoginUser(loginDto, Request.Headers);
-                if (!loginResult.loginSuccessful)
+                if (loginResult.user == null || !loginResult.loginSuccessful)
                 {
                     return Unauthorized("Invalid Authentication");
                 }

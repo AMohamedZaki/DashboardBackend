@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Dashboard.Core.Enums;
+﻿using Dashboard.Helper;
+using Microsoft.AspNetCore.Identity;
 
 namespace Dashboard.Core.Entities
 {

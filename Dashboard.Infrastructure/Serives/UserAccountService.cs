@@ -121,11 +121,18 @@ namespace Dashboard.Infrastructure.Serives
         }
         public async Task<(ApplicationUser user, bool loginSuccessful)> LoginUser(LoginDTO loginDto, IHeaderDictionary headers)
         {
-            var user = await _userManager.FindByEmailAsync(loginDto.Email);
-            bool notValidPassword = !await _userManager.CheckPasswordAsync(user, loginDto.Password);
-            if (user == null || user.IsDeleted || notValidPassword)
-                return (null, false);
-            return (user, true);
+            bool loginSuccessful = false;
+            var user = _userManager.Users.FirstOrDefault(_user => _user.Email == loginDto.Email && _user.UserType == loginDto.UserType);
+            if (user != null)
+            {
+                bool notValidPassword = !await _userManager.CheckPasswordAsync(user, loginDto.Password);
+                if (user == null || user.IsDeleted || notValidPassword)
+                {
+                    return (null, loginSuccessful);
+                } 
+            }
+            loginSuccessful = user != null;
+            return (user, loginSuccessful);
         }
         public async Task<bool> ResetPassword(ResetPasswordDTO resetPasswordDTO)
         {

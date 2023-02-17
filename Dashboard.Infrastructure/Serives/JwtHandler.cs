@@ -6,8 +6,8 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Dashboard.Core.Entities;
-using Dashboard.Core.Enums;
 using Dashboard.Infrastructure.Serives.interfaces;
+using Dashboard.Helper;
 
 namespace Dashboard.Infrastructure.Serives
 {
@@ -47,6 +47,7 @@ namespace Dashboard.Infrastructure.Serives
             return user.UserType switch
             {
                 UserTypeEnum.Admin => (DateTime.Now.AddMinutes(24 * 60), userClaims),
+                UserTypeEnum.Employee => (DateTime.Now.AddMinutes(24 * 60), userClaims),
                 _ => throw new ArgumentException(nameof(user.UserType)),
             };
         }
